@@ -7,12 +7,10 @@ import { RiskDataService } from '../shared/risk-data.service';
   styleUrls: ['portfolio-tickers.component.scss']
 })
 export class PortfolioTickersComponent implements OnInit {
+  errorMessage: string;
+  tickersList: any;
 
-  tickersList: Array<any>;
-
-  constructor(private riskDataService: RiskDataService) {
-      this.tickersList = riskDataService.portfolioTickers;
-  }
+  constructor(private riskDataService: RiskDataService) {}
 
   getFormattedMoney(amount){
     return amount.toFixed(2).replace(/./g, function(c, i, a) {
@@ -20,7 +18,15 @@ export class PortfolioTickersComponent implements OnInit {
     });
   }
 
+  getData() {
+    this.riskDataService.getData()
+         .subscribe(
+           data => { this.tickersList = data.portfolioTickers },
+           error =>  this.errorMessage = <any>error);
+  }
+
   ngOnInit() {
+    this.getData();
   }
 
 }

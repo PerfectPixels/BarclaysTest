@@ -7,14 +7,20 @@ import { RiskDataService } from '../shared/risk-data.service';
   styleUrls: ['portfolio-assets.component.scss']
 })
 export class PortfolioAssetsComponent implements OnInit {
+  errorMessage: string;
+  assetsList: any;
 
-  assetsList: Array<any>;
+  constructor(private riskDataService: RiskDataService) { }
 
-  constructor(private riskDataService: RiskDataService) {
-    this.assetsList = riskDataService.portfolioAssets;
+  getData() {
+    this.riskDataService.getData()
+         .subscribe(
+           data => { this.assetsList = data.portfolioAssets },
+           error =>  this.errorMessage = <any>error);
   }
 
   ngOnInit() {
+    this.getData();
   }
 
 }

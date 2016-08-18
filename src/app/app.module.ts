@@ -1,5 +1,6 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
+import { HttpModule, JsonpModule } from '@angular/http';
 import { HTTP_PROVIDERS } from '@angular/http';
 
 import { MdIcon, MdIconRegistry } from '@angular2-material/icon';
@@ -15,7 +16,11 @@ import { DateRangePickerComponent }   from './datepicker/datepicker.component';
 import { IndicatorsComponent } from './indicators/indicators.component';
 
 @NgModule({
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    HttpModule,
+    JsonpModule
+  ],
   declarations: [
     AppComponent,
     PortfolioTickersComponent,

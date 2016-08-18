@@ -7,14 +7,20 @@ import { RiskDataService } from '../shared/risk-data.service';
   styleUrls: ['indicators.component.scss']
 })
 export class IndicatorsComponent implements OnInit {
+  errorMessage: string;
+  indicators: any;
 
-  indicators: Array<any>;
+  constructor(private riskDataService: RiskDataService) {}
 
-  constructor(private riskDataService: RiskDataService) {
-    this.indicators = riskDataService.indicators;
+  getData() {
+    this.riskDataService.getData()
+         .subscribe(
+           data => { this.indicators = data.indicators },
+           error =>  this.errorMessage = <any>error);
   }
 
   ngOnInit() {
+    this.getData();
   }
 
 }
