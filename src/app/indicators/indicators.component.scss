@@ -1,0 +1,67 @@
+@import "../assets/css/_colors";
+@import "../assets/css/_typo";
+
+#filters {
+    position: absolute;
+    top: 0;
+    right: 40px;
+
+    a {
+      color: $grey2;
+
+      &.active {
+        color: $orange;
+      }
+
+    }
+
+}
+
+#indicators {
+  padding: 70px 30px 0;
+
+  .indicator {
+    width: 50%;
+    display: inline-block;
+    margin: 0 -2px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      color: $grey3;
+    }
+
+    &:nth-child(3) {
+      color: $orange;
+    }
+
+    &:nth-child(4) {
+      color: $grey1;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      text-align: right;
+    }
+
+    h4 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.06em;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      h4 {
+        font-size: 36px;
+      }
+    }
+
+    p {
+      font-size: 9px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+  }
+
+}

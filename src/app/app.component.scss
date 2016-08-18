@@ -1,0 +1,106 @@
+@import "assets/css/_colors";
+@import "assets/css/_typo";
+
+header {
+  font-family: $font-family;
+  font-weight: 100;
+  background: $grey1;
+  color: $grey3;
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  h1 {
+    float: left;
+    line-height: 1;
+    padding: 15px 45px;
+    margin: 0 0 0 20px;
+    position: relative;
+
+    .material-icons {
+      font-size: 36px;
+      height: 36px;
+      width: 36px;
+      position: absolute;
+      left: 0;
+      top: 11px;
+    }
+
+  }
+
+  nav {
+    float: right;
+
+    ul {
+      list-style: none;
+      margin: 0; padding: 0;
+      text-align: right;
+
+      li {
+        display: inline-block;
+
+        a {
+          color: $grey3;
+          width: 60px;
+          height: 60px;
+          display: block;
+          margin: 0 -2px 0 0;
+          padding: 15px;
+          transition: all .3s ease;
+
+          .material-icons {
+            font-size: 30px;
+            width: 30px;
+            height: 30px;
+          }
+
+          &:hover,
+          &.active {
+            background: $orange;
+            color: #fff;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+#graph {
+  width: 45%;
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+
+  a {
+    font-size: 15px;
+    font-weight: normal;
+    color: $grey2;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    padding: 4px 0;
+    position: relative;
+
+    &:hover {
+      text-decoration: none;
+      color: $orange;
+    }
+
+    .material-icons {
+      position: absolute;
+      left: 100%;
+      top: 0;
+    }
+
+  }
+
+  figure {
+    background: url(app/assets/images/graph2.jpg) no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+
+}

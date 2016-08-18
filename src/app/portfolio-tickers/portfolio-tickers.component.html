@@ -1,0 +1,7 @@
+<ul id="portfolio-tickers">
+  <li *ngFor="let ticker of tickersList" [ngClass]="{negative: ticker.delta < 0, positive: ticker.delta > 0}">
+    <small class="name">{{ticker.name}}</small>
+    <small class="delta"><span *ngIf="ticker.delta > 0">+</span>{{ticker.delta}}%</small>
+    <span class="amount" [innerHtml]="getFormattedMoney(ticker.amount)"></span>
+  </li>
+</ul>

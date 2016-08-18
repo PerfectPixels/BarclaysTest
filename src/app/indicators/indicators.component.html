@@ -1,0 +1,12 @@
+<nav id="filters">
+  <a href="#"><md-icon>view_comfy</md-icon></a>
+  <a href="#" class="active"><md-icon>poll</md-icon></a>
+  <a href="#"><md-icon>data_usage</md-icon></a>
+</nav>
+
+<section id="indicators">
+  <div class="indicator" *ngFor="let indicator of indicators">
+    <h4>{{indicator.amount}}</h4>
+    <p>{{indicator.name}}</p>
+  </div>
+</section>

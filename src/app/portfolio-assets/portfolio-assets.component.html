@@ -1,0 +1,31 @@
+<datepicker-range></datepicker-range>
+
+<ul id="portfolio-assets">
+  <li *ngFor="let asset of assetsList">
+    <nav>
+      <a href="#">
+        <span>Details</span>
+        <md-icon>search</md-icon>
+      </a>
+      <a href="#">
+        <span>Edit</span>
+        <md-icon>mode_edit</md-icon>
+      </a>
+      <a href="#">
+        <span>Delete</span>
+        <md-icon>clear</md-icon>
+      </a>
+    </nav>
+    <div class="delta-box">
+      <h3>&#916;{{asset.title}}</h3>
+      <p class="val">
+        %val
+        <strong>{{asset.val}}%</strong>
+      </p>
+      <p class="accts">
+        accts
+        <strong>{{asset.accts}}</strong>
+      </p>
+    </div>
+  </li>
+</ul>
