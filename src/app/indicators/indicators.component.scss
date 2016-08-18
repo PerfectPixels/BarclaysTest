@@ -18,7 +18,7 @@
 }
 
 #indicators {
-  padding: 70px 30px 0;
+  padding: 80px 30px 0;
 
   .indicator {
     width: 50%;
@@ -46,7 +46,9 @@
     h4 {
       font-size: 24px;
       font-weight: 800;
+      line-height: 1;
       letter-spacing: -0.06em;
+      margin: 0;
     }
 
     &:nth-child(3),
@@ -60,6 +62,7 @@
       font-size: 9px;
       font-weight: 800;
       text-transform: uppercase;
+      margin-top: 0;
     }
 
   }

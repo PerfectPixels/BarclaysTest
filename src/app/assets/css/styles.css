@@ -1,5 +1,7 @@
 body,
 html {
+  font-family: "ExpertSans";
+  font-weight: normal;
   margin: 0;
   padding: 0;
 }
@@ -46,7 +48,7 @@ indicators {
   }
 
   #indicators {
-    padding-top: 20px !important;
+    padding-top: 40px !important;
   }
 
 }
@@ -63,7 +65,7 @@ indicators {
   }
 
   #indicators {
-    padding-top: 110px !important;
+    padding-top: 140px !important;
   }
 
 }

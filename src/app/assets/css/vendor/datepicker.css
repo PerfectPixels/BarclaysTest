@@ -1,3 +1,8 @@
+.daterangepicker {
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  display: none;
+}
+
 .daterangepicker .input-mini, .daterangepicker .input-mini.active {
   border-top: none;
   border-right: none;
