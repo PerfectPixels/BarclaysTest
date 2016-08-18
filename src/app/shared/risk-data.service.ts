@@ -7,7 +7,7 @@ export class RiskDataService {
 
   constructor(private http: Http) { }
 
-  private dataUrl = 'app/shared/risk-data.json';  // URL to web API
+  private dataUrl = 'https://raw.githubusercontent.com/PerfectPixels/BarclaysTest/gh-pages/app/shared/risk-data.json';  // URL to web API
 
   getData () {
     return this.http.get(this.dataUrl)
