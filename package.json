@@ -39,7 +39,8 @@
   "devDependencies": {
     "@types/jasmine": "^2.2.30",
     "@types/protractor": "^1.5.16",
-    "angular-cli": "^1.0.0-beta.11-webpack.2",
+    "angular-cli": "1.0.0-beta.11-webpack.2",
+    "angular-cli-ghpages": "^0.2.0",
     "codelyzer": "0.0.26",
     "i": "^0.3.5",
     "jasmine-core": "2.4.1",
