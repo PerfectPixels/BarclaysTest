@@ -2,19 +2,19 @@ $font-family: "ExpertSans";
 
 @font-face {
     font-family: $font-family;
-    src: url(app/assets/css/fonts/ExpertSansRegular.ttf) format("truetype");
+    src: url(https://raw.githubusercontent.com/PerfectPixels/BarclaysTest/master/src/app/assets/css/fonts/ExpertSansRegular.ttf) format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: $font-family;
-    src: url(app/assets/css/fonts/ExpertSansLight.ttf) format("truetype");
+    src: url(https://raw.githubusercontent.com/PerfectPixels/BarclaysTest/master/src/app/assets/css/fonts/ExpertSansLight.ttf) format("truetype");
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: $font-family;
-    src: url(app/assets/css/fonts/ExpertSansBold.ttf) format("truetype");
+    src: url(https://raw.githubusercontent.com/PerfectPixels/BarclaysTest/master/src/app/assets/css/fonts/ExpertSansBold.ttf) format("truetype");
     font-weight: 800;
     font-style: normal;
 }
